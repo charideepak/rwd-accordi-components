@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>com.rbs.agilemarkets.webcon - responsive-accordion-components</comment>
+<entry key="createdBy">d.chary.chadarghat</entry>
+<entry key="name">responsive-accordion-components</entry>
+<entry key="created">2017-07-03T21:16:10.371+0530</entry>
+<entry key="groupId">com.rbs.agilemarkets.webcon</entry>
+<entry key="version">1.4.0</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">com.rbs.agilemarkets.webcon</entry>
+<entry key="description">Responsive RBS AEM Accordion Component</entry>
+<entry key="artifactId">responsive-accordion-components</entry>
+<entry key="path">/etc/packages/com.rbs.agilemarkets.webcon/responsive-accordion-components.zip</entry>
+</properties>

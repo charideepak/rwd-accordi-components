@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    cq:lastReplicated="{Date}2015-02-13T18:36:09.862+05:30"
+    cq:lastReplicatedBy="admin"
+    cq:lastReplicationAction="Activate"
+    jcr:mixinTypes="[cq:ReplicationStatus]"
+    jcr:primaryType="cq:Dialog"
+    title="dialog"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <styles
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <accordionTitle
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Title of the accordion to be displayed on the Accordion Tab"
+                        fieldLabel="Title for the Accordion"
+                        name="./accordionTitle"
+                        xtype="textfield"/>
+                    <accordionCloseTitle
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Text to be configured for the close button/link on the accordion."
+                        fieldLabel="Close Title for the Accordion"
+                        name="./accordionCloseTitle"
+                        xtype="textfield"/>
+                    <expandedAccordion
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Please select if you want the accordion to be in open state by the time page loads. "
+                        fieldLabel="Expand by default"
+                        name="./expandedAccordion"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </styles>
+        </items>
+    </items>
+</jcr:root>

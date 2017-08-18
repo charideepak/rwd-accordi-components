@@ -1,0 +1,49 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"/>
+<div data-sly-call="${clientlib.all @ categories='apps.responsive.accordion.base'}" data-sly-unwrap />
+<sly data-sly-test="${currentDesign.id == 'responsive_natwest_personal'}">
+	<sly data-sly-call="${clientlib.all @ categories='apps.responsive.accordion.natwest.personal'}"/> 
+</sly>
+ <sly data-sly-test="${currentDesign.id == 'responsive_rbs_personal'}">
+	<sly data-sly-call="${clientlib.all @ categories='apps.responsive.accordion.rbs.personal'}"/> 
+</sly> 
+ <sly data-sly-test="${currentDesign.id == 'responsive_natwest_business'}">
+	<sly data-sly-call="${clientlib.all @ categories='apps.responsive.accordion.natwest.business'}"/> 
+</sly> 
+ <sly data-sly-test="${currentDesign.id == 'responsive_rbs_business'}">
+	<sly data-sly-call="${clientlib.all @ categories='apps.responsive.accordion.rbs.business'}"/> 
+</sly>
+
+<div class='auth--info' data-sly-test="${wcmmode.edit && !properties.accordionTitle}">
+Add composite component to the parsys in this accordion component
+</div>
+<sly data-sly-test.accordionTitle="${properties.accordionTitle}"/>
+<sly data-sly-test.accordionCloseTitle="${properties.accordionCloseTitle}"/>
+<sly data-sly-test.active=""/>
+<sly data-sly-test="${properties.expandedAccordion}">
+	<sly data-sly-test.active="active"/>
+</sly>
+<div class="product-accordion">
+				<div class="product-acr-header">
+					<div class="row">
+						<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+							<div class="accordion-header">
+								<a class="acordion-header-icon" href="javascript:void(0)"><span class="hidden">icon</span></a>
+								<span>${accordionTitle}</span>
+							</div>
+						</div>
+					</div>
+					<a class="acordion-icon" href="javascript:void(0)"><span class="hidden">OpenClose</span></a>
+				</div>
+				<div class="product-acr-body ${active}">
+					<div class="product-acr-container">
+                         <div>
+                             <sly data-sly-resource="${ @path='par', resourceType='wcm/foundation/components/responsivegrid'}"/>
+                          </div>
+					</div>
+					<div class="product-acr-footer-bg">
+						<div class="product-acr-footer">
+							<a href="javascript:void(0)">${accordionCloseTitle}<span></span></a>
+						</div>
+					</div>
+				</div>				
+			</div>
